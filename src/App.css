@@ -1,0 +1,205 @@
+.app{
+  color: #848484;
+  padding-bottom: 15px;
+}
+
+.app input{
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 16px;
+  height: 55px;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  background: #232323;
+  border-radius: 3px;
+  color: #E4E3E3;
+}
+
+.app .search-input-container{
+  padding-left: 0px;
+  padding-right: 25px;
+  position: relative;
+}
+
+.app .search-input-container span{
+  position: absolute;
+  top: 18px;
+  right: 25px;
+  margin-right: 15px;
+  background: #848484;
+  padding: 2px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #1C1C1C;
+}
+
+.app .search-button-container{
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.app .search-button{
+  font-size: 16px;
+  text-transform: uppercase;
+  background: #02FFFF;
+  color: #1C1C1C;
+  margin-top: 1px;
+  min-height: 53px !important; 
+  padding-top: 16px;
+  border-radius: 3px;
+}
+
+.app .search-input-container .search-results-container{
+  position: absolute;
+  border-radius: 3px;
+  left: 0px;
+  right: 25px;
+  margin-top: 12px;
+  background: #232323;
+  padding: 20px 15px;
+  z-index: 99;
+}
+
+.app .search-input-container .search-results-container ul{
+  padding: 0;
+  margin: 0;
+}
+
+.app .search-input-container .search-results-container ul li{
+  list-style: none;
+  cursor: pointer;
+  border-bottom: 1px solid #1E1A1A;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  padding-left: 15px;
+}
+
+.app .search-input-container .search-results-container ul li:hover{
+  color: #ABA9A9;
+}
+
+.app .albums-container{
+  margin-top: 40px;
+}
+
+.app .albums-container .albums-container-title{
+  font-size: 19px;
+  color: #E4E3E3;
+  border-bottom: 1px solid #252323;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.app .albums-container .albums-container-second-title{
+  font-size: 20px;
+  color: #02FFFF;
+}
+
+.app .albums-container .thumbnail{
+  padding: 0px;
+  box-shadow: none;
+  border: none;
+  margin-bottom: 8px;
+}
+
+.app .albums-container .albums-title{
+  font-size: 16px;
+  color: #02FFFF;
+  transition: all 100ms ease-in-out;
+}
+
+.app .albums-container .albums-scroll-container{
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  min-width: 100% !important;
+}
+
+.app .albums-container .albums-scroll-container::-webkit-scrollbar {
+  display: none !important;
+}
+
+.app .albums-container .albums-scroll-container .album{
+  min-width: 20% !important;
+  max-width: 20% !important;
+  cursor: pointer !important;
+  padding-right: 10px;
+  padding-bottom: 20px;
+}
+
+.app .albums-container .albums-scroll-container .album:hover{
+  border-bottom: 1px solid #252323 !important;
+}
+
+.app .albums-container .albums-scroll-container .album small{
+  font-size: 8.5px;
+  color: #02FFFF;
+  position: absolute;
+  margin-top: -4px;
+  opacity: 0;
+  transition: all 100ms ease-in-out;
+}
+
+.app .albums-container .albums-scroll-container .album.album-hovered .albums-title{
+  transition: all 200ms ease-in-out;
+}
+
+.app .albums-container .albums-scroll-container .album.album-hovered small{
+  opacity: 1;
+  transition: all 200ms ease-in-out;
+}
+
+.app .playlist{
+  margin-top: 100px;
+}
+
+.app .playlist .small-column{
+  min-width: 20% !important;
+  max-width: 20% !important;
+}
+
+.app .playlist .small-column .thumbnail{
+  padding: 0px;
+  box-shadow: none;
+  border: none;
+  position: absolute;
+  top: -110px;
+}
+
+.app .playlist .table th{
+  font-size: 13px;
+  color: #E4E3E3;
+}
+
+.app .playlist .inner-table-container{
+  background: #232323;
+  margin-top: -10px;
+}
+
+.app .playlist .inner-table-container tr{
+  font-size: 13px;
+  color: #E4E3E3; 
+  border-top: none !important;
+}
+
+.app .playlist .inner-table-container tr.not-last-item{
+  border-bottom: 1px solid #1E1A1A;
+}
+
+.app .playlist .inner-table-container tr td{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.app .playlist .large-column{
+  position: relative;
+}
+
+.app .playlist .large-column .album-title-in-playlist{
+  font-size: 24px;
+  color: #02FFFF;
+  position: absolute;
+  margin-left: 13px;
+  top: -60px;
+}
